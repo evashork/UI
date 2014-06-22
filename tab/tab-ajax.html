@@ -6,11 +6,8 @@
 <meta name="description" content="Add your sites description here">
 <meta name="keywords" content="Add,your,site,keywords,here">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-<title>메뉴 : 브랜드명</title>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="apple-touch-icon-precomposed" href="icon.png"/>
-<link rel="shortcut icon" href="favicon.png" /><!-- 안드로이드아이콘 -->
-<link rel="stylesheet" href="css/common.css" type="text/css" />
+<title>TEST</title>
+<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" />
 <!--[if IE 6]><link rel="stylesheet" type="text/css" href="css/ie6.css" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css" /><![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="css/ie8.css" /><![endif]-->
@@ -22,49 +19,35 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript">
 //<![CDATA[
-
+    $(function(){
+        $(".panel").load($("tab a.selected").attr("href"));
+        $(".tab li > a").bind("click focus" , function(){
+            $(".tab li > a").removeClass("selected");
+            $(this).addClass("selected");
+            $(".panel").load($(this).attr("href"));
+            return false;
+        });
+    });
 //]]>
 </script>
 <style type="text/css">
-
+.tab{ position: relative; clear: both;}
+.tab>li{float: left; list-style: none; width: 50px;}
+.tab .panel{}
 </style>
 </head>
 <body>
-    <div id="skipToContent"><a href="#content">메뉴 건너 뛰기</a></div>
-    <header>
-        <h1><a href="#">HTML5</a></h1>
-    </header>
-    <!-- //header -->
-    <div id="content"> 
-        <nav>
-            <ul>
-                <li><a href="#">메뉴1</a></li>
-            </ul>
-        </nav>
-        <!-- //nav -->
-        <section>
-            <article>
-            포스팅1
-            </article>
-        </section>
-        <!-- //section -->
-        <div class="section">
-                    <div class="area">
-                        <div class="group">
-                        </div>
-                    </div>
-                </div>
-        <aside>
-            <div>관련글</div>
-            <ul>
-                <li><a href="#">관련글1</a></li>
-            </ul>
-        </aside>
-        <!-- //aside -->
+    <div class="tab_area">
+        <ul class="tab">
+            <li><a href="css.txt" class="selected">tab1</a></li>
+            <li><a href="taco.html">tab2</a></li>
+            <li><a href="test.txt">tab3</a></li>
+            <li><a href="test.txt">tab4</a></li>
+            <li><a href="test.txt">tab5</a></li>
+        </ul>
+        <div class="panel">
+            
+        </div>
     </div>
-    <footer>
-        <p>Copyright © 2010 All Rights</p>
-    </footer>
-    <!-- //footer -->
 </body>
 </html>
