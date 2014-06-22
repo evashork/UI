@@ -7,6 +7,8 @@ UI
 
 * IE9.js - https://code.google.com/p/ie7-js/
 * html5.js - https://code.google.com/p/html5shiv/
+* respond.js - https://github.com/scottjehl/Respond
 * Normalize.css v3 - http://necolas.github.io/normalize.css/ ie8+ 지원
 * Normalize.css v1 - https://github.com/necolas/normalize.css/tree/v1 ie6+ 지원
 * Reset.css - http://meyerweb.com/eric/tools/css/reset/
+* CDN - http://cdnjs.com/
