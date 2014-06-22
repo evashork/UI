@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* Type Selector */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,th,td,blockquote,p{margin:0; padding:0; font-family:'나눔고딕',NanumGothic,'맑은고딕',Malgun Gothic,'돋움',Dotum,'굴림',Gulim,Helvetica,AppleGothic,Sans-serif; font-size:12px;}
+img, fieldset, button{border:0}
+img{vertical-align:top}
+li{list-style:none}
+em,address{font-style:normal}
+a{color:#393939; text-decoration:none}
+a:link{color:#393939; text-decoration:none}
+a:hover{color:#606060; text-decoration:underline}
+a:active{color:#606060; text-decoration:underline}
+a:focus{color:#606060; text-decoration:underline}
+textarea{overflow:auto}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0} /* For Screen Reader */
+legend, hr, caption { visibility:hidden; font-size:0; line-height:0; height:0} /* For Screen Reader */
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+table{border-collapse:collapse; border-spacing:0}
+button{border:0; padding:0; background:transparent; cursor:pointer; *overflow:visible}
+/* html5 ie9 else */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; padding:0; margin:0}
+/* 모바일 */
+html {
+	  -webkit-touch-callout:none;
+	  -webkit-user-select:none;
+	  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+body {
+     line-height: 1;
+     -webkit-text-size-adjust:none;
+     overflow-y: visible !important;
+}
+/* common */
+input[type=checkbox], input[type=radio] {vertical-align: middle; position: relative; bottom: 1px}
+input[type=radio] {bottom: 2px}
+.clear{ *zoom:1}
+.clear:after { content:""; clear:both; display:block}
+.fl_left{float:left}
+.fl_right{float:right}
+.mrb15{margin-bottom:15px !important}
+.mrb40{margin-bottom:40px !important}
+.mrb45{margin-bottom:45px !important}
+.mrb55{margin-bottom:55px !important}
+.mrb100{margin-bottom:100px !important}
+
+/* 웹접근성 */
+.blind{position:absolute; width:0; height:0; font-size:0; line-height:0; overflow:hidden; visibility:hidden} /* display:none 대체 클래스 */
+#skipToContent { position:relative} /* 메뉴건너뛰기 */
+#skipToContent a { display:block; height:1px; width:1px; margin-bottom:-1px; overflow:hidden; text-align:center; color:#000; white-space:nowrap}
+#skipToContent a:focus,
+#skipToContent a:active { height:auto; width:100%; padding:5px; margin-bottom:10px}
+.ir{text-indent: -9999px; overflow: hidden; display: block}
+
+/* Layout Selector */
+body{}
+#wrap{position: relative; margin: 0 auto; width: 960px}
+header{position: relative;}
+#container{position: relative}
+footer{position: relative;}
+
+/* Header */
+
+/* Container */ 
+
+/* Footer */
+
+@media all and (min-width:320px){
+}
+/* 갤럭시넥서스,갤럭시s2,갤럭시s3 */
+@media all and (min-width:360px){
+}
+/* 옵티머스뷰 */
+@media all and (min-width:385px){
+}
+/* 갤럭시노트 */
+@media all and (min-width:400px){
+}
+
+@media all and (min-width:439px){
+}
+
+@media all and (min-width:800px){
+}
+
+@media only screen and (min-width: 800px) and (max-width: 960px){
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {   
+}
