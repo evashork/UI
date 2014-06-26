@@ -42,3 +42,11 @@ UI
 ```
  mykin_nboard_view.html // 메뉴이름_의미_상태
 ```
+
+## 기타TIP
+
+### IE8이하에서 background-size:cover을 적용하는 법
+```
+ .bg{filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='img/headder_bg.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='img/header_bg.png', sizingMethod='scale')"}
+```
