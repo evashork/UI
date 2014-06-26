@@ -13,8 +13,8 @@ UI
 * Reset.css - http://meyerweb.com/eric/tools/css/reset/
 * CDN - http://cdnjs.com/
 
-### 네이밍
-####기본규칙
+##네이밍
+###기본규칙
 * 영문,숫자,언더스코어(_)만 사용할 수 있다.
 * 단어와 숫자를 조합할 때는 언더스코어를 생략한다.
 * 언더스코어를 이용해 3단계를 초과하여 조합할 수 없다. ex) section_lst_type
@@ -29,7 +29,7 @@ UI
  #pop_wrap #pop_header #pop_container // 팝업 레이아웃
 ```
 
-####이미지 네이밍 규칙
+###이미지 네이밍 규칙
 * 형태+의미+상태 
 ```
  tab1_recomm_on // 형태_의미_상태
@@ -37,7 +37,7 @@ UI
  icon_num_black1
 ```
 
-####파일 및 폴더 네이밍 규칙
+###파일 및 폴더 네이밍 규칙
 * 메뉴이름+의미+상태 
 ```
  mykin_nboard_view.html // 메뉴이름_의미_상태
